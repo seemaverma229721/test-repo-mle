@@ -1,0 +1,191 @@
+Script started on 2025-02-26 18:42:21+05:30 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="120" LINES="30"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+]0;tiger06547@TIGER06547: ~ [01;32mtiger06547@TIGER06547[00m:[01;34m~[00m$ git clone https://github.com/seemaverma229721/test-repo-mle.git
+Cloning into 'test-repo-mle'...
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[K
+remote: Counting objects:  66% (2/3)[K
+remote: Counting objects: 100% (3/3)[K
+remote: Counting objects: 100% (3/3), done.[K
+remote: Compressing objects:  50% (1/2)[K
+remote: Compressing objects: 100% (2/2)[K
+remote: Compressing objects: 100% (2/2), done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)[K
+Unpacking objects:  33% (1/3)
+Unpacking objects:  66% (2/3)
+Unpacking objects: 100% (3/3)
+Unpacking objects: 100% (3/3), 11.21 KiB | 1.12 MiB/s, done.
+]0;tiger06547@TIGER06547: ~ [01;32mtiger06547@TIGER06547[00m:[01;34m~[00m$ git status
+fatal: not a git repository (or any of the parent directories): .git
+]0;tiger06547@TIGER06547: ~ [01;32mtiger06547@TIGER06547[00m:[01;34m~[00m$ pwd
+/home/tiger06547
+]0;tiger06547@TIGER06547: ~ [01;32mtiger06547@TIGER06547[00m:[01;34m~[00m$ echo 'My Project' > README
+]0;tiger06547@TIGER06547: ~ [01;32mtiger06547@TIGER06547[00m:[01;34m~[00m$ git status
+fatal: not a git repository (or any of the parent directories): .git
+]0;tiger06547@TIGER06547: ~ [01;32mtiger06547@TIGER06547[00m:[01;34m~[00m$ cd test-repo-mle
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ 
+[K]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git add README
+fatal: pathspec 'README' did not match any files
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$  git add CONTRIBUTING.md[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C   
+fatal: pathspec 'CONTRIBUTING.md' did not match any files
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ echo 'My Project' > README
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mREADME[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git add README
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git add CONTRIBUTING.md
+fatal: pathspec 'CONTRIBUTING.md' did not match any files
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git status -s
+[32mA[m  README
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ cat .gitignore
+cat: .gitignore: No such file or directory
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git diff
+[?1h=
+
+[K[?1l>]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git diff --staged
+[?1h=
+[1mdiff --git a/README b/README[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..56266d3[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/README[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32mMy Project[m[m
+
+[K[?1l>]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git add CONTRIBUTING.md
+fatal: pathspec 'CONTRIBUTING.md' did not match any files
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ echo '# test line' >> CONTRIBUTING.md
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mCONTRIBUTING.md[m
+
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git diff
+[?1h=
+
+[K[?1l>]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git commit
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <tiger06547@TIGER06547.tigeranalytics.local>) not allowed
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git config --global user.name "Seema Verma"
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git config --global user.email "your-email@example.com"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"s"e"e"m"a"."v"e"r"m"a"@"t"i"g"e"r"a"n"a"l"y"t"i"c"s"."c"o"m"[C 
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git config --global --list
+[?1h=
+user.name=Seema Verma[m
+user.email=seema.verma@tigeranalytics.com[m
+
+[K[?1l>]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git commit -m "Your commit message"[C[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"C"o"m"m"i"t"i"n"g" "C"h"a"n"g"e"s"[C 
+[main 8f05952] Commiting Changes
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ rm PROJECTS.md
+rm: cannot remove 'PROJECTS.md': No such file or directory
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git rm --cached README
+rm 'README'
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git rm log/\*.log
+fatal: pathspec 'log/*.log' did not match any files
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git mv README.md README
+fatal: bad source, source=README.md, destination=README
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mdeleted:    README[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mCONTRIBUTING.md[m
+	[31mREADME[m
+
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git log
+[?1h=
+[33mcommit 8f0595268d74283d1d0acd4fe28b4257bd804ccf[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: Seema Verma <seema.verma@tigeranalytics.com>[m
+Date:   Wed Feb 26 18:53:09 2025 +0530[m
+[m
+    Commiting Changes[m
+[m
+[33mcommit f0f04ca23d5c346a176e26728dea11e146207565[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: seemaverma229721 <seema.verma@tigeranalytics.com>[m
+Date:   Wed Feb 26 18:37:44 2025 +0530[m
+[m
+    Create my_unix_session[m
+
+[K[?1l>]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git log --start
+fatal: unrecognized argument: --start
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git add README test.rb LICENSE
+fatal: pathspec 'test.rb' did not match any files
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git log --oneline --decorate
+[?1h=
+[33m8f05952[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m Commiting Changes[m
+[33mf0f04ca[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Create my_unix_session[m
+
+[K[?1l>]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$  git checkout testing[1P
+error: pathspec 'testing' did not match any file(s) known to git
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git log --oneline --decorate --graph --all
+[?1h=
+* [33m8f05952[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m Commiting Changes[m
+* [33mf0f04ca[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Create my_unix_session[m
+
+[K[?1l>]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+]0;tiger06547@TIGER06547: ~/test-repo-mle [01;32mtiger06547@TIGER06547[00m:[01;34m~/test-repo-mle[00m$ exit
+exit
+
+Script done on 2025-02-26 18:58:11+05:30 [COMMAND_EXIT_CODE="1"]
